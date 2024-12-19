@@ -41,8 +41,6 @@ const SupplierTableTransaction = () => {
 
   const handleStatusChange = async (orderID, newStatus) => {
     try {
-      console.log("orderID:", orderID);
-      console.log("newStatus:", newStatus);
       await axiosInstance.put(
         `/api/orders/status`,
         { orderID, status: newStatus },
@@ -179,7 +177,7 @@ const SupplierTableTransaction = () => {
                   </td>
                   <td className="border-b border-blue-gray-50 p-4">
                     <FormField
-                      id={"status"}
+                      id={"status-${order.orderID}"}
                       type={"select"}
                       name={"status"}
                       value={order.status}

@@ -3,6 +3,7 @@ import Select from "../atoms/Select";
 import Input from "../atoms/Input";
 import { IoEye, IoEyeOff } from "react-icons/io5";
 import useStore from "@/stores/showStore";
+import SelectOption from "../atoms/SelectOption";
 
 const FormField = ({
   label,
@@ -24,13 +25,13 @@ const FormField = ({
       </label>
 
       {type === "select" ? (
-        <Select
+        <SelectOption
           name={name}
           value={value}
           onChange={onChange}
-          options={options}
+          options={options} // Pastikan ini benar
           id={id}
-          className={classNameSelect}
+          className={classNameSelect} // Tambahkan kelas jika perlu
         />
       ) : type === "password" ? (
         <div className="relative w-full rounded-lg border border-gray-300">
