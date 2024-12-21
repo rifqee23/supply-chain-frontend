@@ -114,14 +114,14 @@ const TableProduct = () => {
     <>
       <Button
         onClick={handleOpenAdd}
-        className={"mb-4 rounded-md bg-deep-orange-200 px-2 py-1"}
+        className={"text-white font-semibold mb-4 rounded-md bg-HIJAU px-2 py-1"}
       >
-        Add Product
+        TAMBAH BARANG
       </Button>
       <Card className="overflow-x-auto">
         <table className="min-w-full text-left">
           <thead>
-            <tr>
+            <tr className="text-HIJAU">
               {[
                 "ID",
                 "Name",
@@ -135,12 +135,12 @@ const TableProduct = () => {
               ].map((header) => (
                 <th
                   key={header}
-                  className="border-b border-blue-gray-100 bg-blue-gray-50 p-4"
+                  className="border-b border-HIJAU p-4"
                 >
                   <Typography
                     variant="small"
-                    color="blue-gray"
-                    className="font-normal leading-none opacity-70"
+                    color="HIJAU"
+                    className="font-extrabold leading-none opacity-70"
                   >
                     {header}
                   </Typography>

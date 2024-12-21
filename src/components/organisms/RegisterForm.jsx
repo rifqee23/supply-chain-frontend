@@ -122,6 +122,7 @@ const RegisterForm = () => {
           options={roleOptions}
           onChange={(event) => setRole(event.target.value)}
           classNameLabel={"block text-sm font-medium text-gray-900 inline-flex"}
+          classNameSelect={"mb-2"}
         />
 
         <FormField
@@ -144,7 +145,7 @@ const RegisterForm = () => {
           label={"Confirm Password"}
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
-          classNameLabel={"block text-sm font-medium text-gray-900 inline-flex"}
+          classNameLabel={"block text-sm font-medium text-gray-900 inline-flex mt-2"}
           classNameInput={
             "text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5"
           }
@@ -153,7 +154,7 @@ const RegisterForm = () => {
         <Button
           type={"submit"}
           className={
-            "mb-2 me-2 mt-4 w-full rounded-lg border border-gray-300 bg-blue-gray-700 px-5 py-2.5 text-sm font-medium text-white hover:bg-blue-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-100"
+            "mb-2 me-2 mt-4 w-full rounded-lg border border-gray-300 bg-HIJAU px-5 py-2.5 text-lg font-medium text-white hover:bg-blue-gray-400 focus:outline-none focus:ring-4 focus:ring-gray-100"
           }
         >
           Register

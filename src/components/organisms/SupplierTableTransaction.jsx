@@ -66,57 +66,57 @@ const SupplierTableTransaction = () => {
       <Card className="overflow-x-auto">
         <table className="min-w-full">
           <thead>
-            <tr>
-              <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+            <tr className="text-HIJAU">
+              <th className="border-b border-HIJAU p-4">
                 <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
+                  color="HIJAU"
+                  className="font-extrabold leading-none opacity-70"
                 >
                   ID
                 </Typography>
               </th>
-              <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+              <th className="border-b border-HIJAU p-4">
                 <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
+                  color="HIJAU"
+                  className="font-extrabold leading-none opacity-70"
                 >
                   Name
                 </Typography>
               </th>
-              <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+              <th className="border-b border-HIJAU p-4">
                 <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
+                  color="HIJAU"
+                  className="font-extrabold leading-none opacity-70"
                 >
                   Product
                 </Typography>
               </th>
-              <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+              <th className="border-b border-HIJAU p-4">
                 <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
+                  color="HIJAU"
+                  className="font-extrabold leading-none opacity-70"
                 >
                   Quantity
                 </Typography>
               </th>
-              <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
+              <th className="border-b border-HIJAU p-4">
                 <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
+                  color="HIJAU"
+                  className="font-extrabold leading-none opacity-70"
                 >
                   Status
                 </Typography>
               </th>
-              <th className="border-b border-blue-gray-100 bg-blue-gray-50 px-6 py-4">
+              <th className="border-b border-HIJAU px-6 py-4">
                 <Typography
                   variant="small"
-                  color="blue-gray"
-                  className="font-normal leading-none opacity-70"
+                  color="HIJAU"
+                  className="font-extrabold leading-none opacity-70"
                 >
                   QR Code
                 </Typography>

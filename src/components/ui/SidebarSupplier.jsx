@@ -109,8 +109,6 @@ export function SidebarSupplier() {
             </List>
           </AccordionBody>
         </Accordion>
-        <hr className="my-2 border-blue-gray-50" />
-
         <Link to={"transaction"}>
           <ListItem>
             <ListItemPrefix>
@@ -119,7 +117,7 @@ export function SidebarSupplier() {
             Transaksi
           </ListItem>
         </Link>
-
+        <hr className="my-2 border-blue-gray-50" />
         <Link to={"/login"} onClick={logoutUser}>
           <ListItem>
             <ListItemPrefix>

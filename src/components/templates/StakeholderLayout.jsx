@@ -3,6 +3,7 @@ import NavigationStakeholder from "./NavigationStakeholder";
 import { Outlet } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 import Cookies from "js-cookie";
+import { FaRegCircleUser } from "react-icons/fa6";
 
 const StakeholderLayout = () => {
   const [user, setUser] = useState(null);
@@ -38,9 +39,14 @@ const StakeholderLayout = () => {
               Stakeholder
             </h1>
           </div>
-          <div>
-            <h1 className="text-white">{username}</h1>
-            <h3 className="text-white">{email}</h3>
+          <div className="flex items-center justify-cente text-white">
+            <div className="justify-items-end">
+              <h1 className="text-lg font-bold">{username}</h1>
+              <h3 className="text-sm text-gray-300">{email}</h3>
+            </div>
+            <div>
+              <FaRegCircleUser className="ml-2 h-11 w-12" />
+            </div>
           </div>
         </div>
         <Outlet />

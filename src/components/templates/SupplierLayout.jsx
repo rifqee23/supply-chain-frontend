@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { jwtDecode } from "jwt-decode";
 import Cookies from "js-cookie";
 import NavigationSupplier from "./NavigationSupplier";
+import { FaRegCircleUser } from "react-icons/fa6";
 
 const SupplierLayout = () => {
   const [user, setUser] = useState(null);
@@ -36,9 +37,14 @@ const SupplierLayout = () => {
           <div className="flex items-center gap-4">
             <h1 className="text-xl font-semibold drop-shadow-lg">Supplier</h1>
           </div>
-          <div>
-            <h1>{username}</h1>
-            <h3>{email}</h3>
+          <div className="flex justify-center items-center">
+            <div className="justify-items-end">
+              <h1 className="text-lg font-bold">{username}</h1>
+              <h3 className="text-sm text-gray-300">{email}</h3>
+            </div>
+            <div>
+              <FaRegCircleUser className="h-11 w-12 ml-2"/>
+            </div>
           </div>
         </div>
         <Outlet />

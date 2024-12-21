@@ -38,14 +38,14 @@ export function SidebarStakeHolder() {
       id="sidebar"
       className="fixed h-full w-full max-w-[20rem] bg-HIJAU p-4 shadow-xl shadow-blue-gray-900/5"
     >
-      <div className="mb-0 p-0">
+      <div className="mb-0 p-0 flex justify-center item-c">
         <img
           src={logoZ4IN}
           alt="Logo Z4IN"
           style={{ width: "auto", height: "120px" }}
         />
       </div>
-      <List>
+      <List className="ml-2">
         <Link>
           <ListItem className="group">
             <ListItemPrefix>

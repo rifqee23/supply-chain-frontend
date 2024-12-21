@@ -67,11 +67,11 @@ const TableTransaction = () => {
     <Card className="h-full w-full overflow-scroll">
       <table className="w-full min-w-max table-auto text-left">
         <thead>
-          <tr>
+          <tr >
             <th className="border-b border-blue-gray-100 bg-blue-gray-50 p-4">
               <Typography
                 variant="small"
-                color="blue-gray"
+                color=""
                 className="font-normal leading-none opacity-70"
               >
                 ID
